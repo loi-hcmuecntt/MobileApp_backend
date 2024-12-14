@@ -38,5 +38,5 @@ app.use('/api/restaurants', restaurantRoute);
 
 dbConnect();
 
-app.get('/', (req, res) => res.send('The server is working !'));
-app.listen(port, () => console.log(`Server is running on port ${port}!`));
+app.get('/', (req, res) => res.send('Server đã hoạt động'));
+app.listen(port, () => console.log(`Server đang sử dụng port ${port}!`));

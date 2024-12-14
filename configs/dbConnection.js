@@ -2,9 +2,9 @@ import mongoose from 'mongoose';
 
 const dbConnect = async (req, res, next) => {
   await mongoose.connect(process.env.URI, {useNewUrlParser: true, useUnifiedTopology: true})
-  .then(() => console.log("Successfully connected to database"))
+  .then(() => console.log("Kết nối tới database thành công"))
   .catch((err) => {
-      console.log("database connection failed. exiting now...");
+      console.log("Kết nối thất bại...");
       console.error(err);
       process.exit(1);
   })
